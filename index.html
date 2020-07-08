@@ -62,7 +62,12 @@
             bottom: 0;
         }
         .zz img{
-            backdrop-filter: blur(10px);
+            /* backdrop-filter: blur(10px); */
+            filter: blur(20px);
+            min-width: 100%;
+            min-height: 100%;
+            max-width: 200%;
+            max-height: 200%;
         }
         .footer{
             /* position: absolute; */
@@ -96,7 +101,7 @@
 </head>
 <body>
     <div class="zz">
-        <!-- <img src="https://cdn.jsdelivr.net/gh/kaygb/picplus-images/20200620200704235925.jpg" alt="" srcset=""> -->
+        <img class="lazy-img" data-original="https://cdn.jsdelivr.net/gh/kaygb/picplus-images/bgimg/moon.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAICRAEAOw==" alt="" srcset="">
     </div>
 
     <div class="main">
@@ -118,5 +123,27 @@
         </div>
 
     </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+    <script>
+        // lazyload
+    window.onload = function() {
+        $('.zz img').addClass('lazyload');
+        $(function() {
+            $("img.lazyload").lazyload({
+                effect: 'fadeIn',
+                // inverval: 3000
+                effectspeed: 1000
+            });
+        });
+
+        $(".zz img").lazyload({
+            effect: 'fadeIn',
+            // inverval: 3000
+            effectspeed: 1000 
+        });
+    }
+    </script>
 </body>
 </html>
