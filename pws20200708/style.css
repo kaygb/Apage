@@ -1,0 +1,92 @@
+/* 
+Name：bppws
+Author：kaygb
+Version：20200708
+ */
+@font-face {
+    font-family: 'Concrete';
+    src: url('https://cdn.jsdelivr.net/gh/kaygb/www.kaygb.com@master/assets/Concrete/Concrete-2.ttf');
+    }
+
+    body{
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: black;
+        font-family: Concrete, Arial, Helvetica, sans-serif;
+    }
+    .main{
+        max-width: 600px;
+        min-height: 500px;
+        margin: 200px auto;
+        display: block;
+        position: relative;
+
+
+    }
+    div{
+        display: block;
+    }
+    h1{
+        color: #e84393;
+        font-size: 4rem;
+        position: relative;
+
+    }
+    p{
+        color: #b2bec3;
+        font-size: 1.5rem;
+    }
+    p a{
+        color: #e84393;
+    }
+    p a:hover,p a:visited,p a:focus{
+        color: #e84393;
+    }
+    .zz{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.486);
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .zz img{
+        /* backdrop-filter: blur(10px); */
+        filter: blur(20px);
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 200%;
+        max-height: 200%;
+    }
+    .footer{
+        /* position: absolute; */
+        bottom: 0;
+        line-height: 50px;
+        height: 50px;
+        color: #999;
+        font-size: .9rem;
+    }
+    .footer a{
+        color: #999;
+
+    }
+    .footer img{
+        /* position: absolute; */
+        margin: 0;
+        padding: 0;
+        /* bottom: -20; */
+    }
+    a.upyun{
+        /* margin: 0; */
+        height: 50px;
+        
+    }
+    @media screen and (max-width: 600px) {
+        .main{
+        margin: 100px auto;
+    }
+}
