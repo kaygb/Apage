@@ -18,4 +18,4 @@ h1::before{
 
 ~~~
 
-[![](https://img.shields.io/github/license/kaygb/kaygb)](https://github.com/kaygb/kaygb/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/kaygb/kaygb)](https://github.com/kaygb/Apage/blob/master/LICENSE)
