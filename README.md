@@ -18,6 +18,4 @@ h1::before{
 
 ~~~
 
-## 版权声明
-
-原创单页模板，请您使用的时候保留链接地址，谢谢。
+[![](https://img.shields.io/github/license/kaygb/kaygb)](https://github.com/kaygb/kaygb/blob/master/LICENSE)
