@@ -17,8 +17,8 @@ Version：20200708
     }
     .main{
         max-width: 600px;
-        min-height: 500px;
-        margin: 200px auto;
+        padding: 10px;
+        margin: 20vh auto;
         display: block;
         position: relative;
 
